@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.dell.com/is/image/DellContent//content/dam/global-asset-library/Products/Notebooks/XPS/13_9310_touch/xs9310t_cnb_00055lf110_wh.psd?fmt=png-alpha&pscan=auto&scl=1&wid=3640&hei=2034&qlt=100,0&resMode=sharp2&size=3640,2034",
+        "name": "Dell XPS 13 9310",
+        "desription": "ldf ksdfjsdkl fkasdf ds fkls sk sk ksfksdf    kdjf kfa lksf dkjf dk ls s"
+    },
+    {
+        "id": 2,
+        "img": "https://p1-ofp.static.pub/fes/cms/2022/03/17/pw5jy11vn8u0jbi3rdu3aq1ij4bl15411237.png",
+        "name": "Lenovo ThinkPad X1 Carbon 8th Gen",
+        "desription": "ldf ksdfjsdkl fkasdf ds fkls sk sk ksfksdf    kdjf kfa lksf dkjf dk ls sldf ksdfjsdkl fkasdf ds fkls sk sk ksfksdf    kdjf kfa lksf dkjf dk ls s"
+    },
+    {
+        "id": 3,
+        "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/zephyrus/g14-gray/zephyrus-g14-01-500x500.jpg",
+        "name": " Asus ROG Zephyrus G14",
+        "desription": "ldf ksdfjsdkl fkasdf ds fkls sk sk ksfksdf    kdjf kfa lksf dkjf dk ls s sk sk ksfksdf    kdjf kfa lksf dkjf dk ls s"
+    },
+    {
+        "id":4,
+        "img":"https://icdn.digitaltrends.com/image/digitaltrends/olympus-digital-camera-952-625x417-c.jpg",
+        "name":" Macbook Air M1",
+        "desription":"ldf ksdfjsdkl fkasdf ds fkls sk sk ksfksdf    kdjf kfa lksf dkjf dk ls s ds fkls sk sk ksfksdf    kdjf kfa lksf dkjf dk ls "
+
+    },
+    {
+        "id":5,
+        "img":"https://www.notebookcheck.net/uploads/tx_nbc2/envyx36013.jpg",
+        "name":"HP Envy x360 13-inch",
+        "desription":"ldf ksdfjsdkl fkasdf ds fkls sk sk ksfksdf    kdjf kfa lksf dkjf dk ls s"
+    },
+    {
+        "id":6,
+        "img":"https://i.pcmag.com/imagery/reviews/0227QDT3xYwn3xEOpyiJpNU-1.fit_scale.size_1028x578.v1574212824.jpg",
+        "name":"MacBook Pro 16-inch",
+        "desription":"ldf ksdfjsdkl fkasdf ds fkls sk sk ksfksdf    kdjf kfa lksf dkjf dk ls s"
+    }
+]
