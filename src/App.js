@@ -8,11 +8,13 @@ import AddItems from './components/AddItems/AddItems';
 import MyItems from './components/MyItems/MyItems';
 import Banner from './components/Banner/Banner';
 import Login from './components/Login/Login';
+import Footer from './components/Footer/Footer';
 function App() {
   
   return (
     <div className="App">
      <Headers></Headers>
+     {/* Below Router */}
      <Routes>
        <Route path='/' element={<Home></Home>}></Route>
        <Route path='/home' element={<Home></Home>}></Route>
@@ -22,6 +24,9 @@ function App() {
        <Route path='/banner' element={<Banner></Banner>}></Route>
        <Route path='/login' element={<Login></Login>}></Route>
      </Routes>
+     {/* Below footer */}
+     <Footer></Footer>
+
     </div>
   );
 }
