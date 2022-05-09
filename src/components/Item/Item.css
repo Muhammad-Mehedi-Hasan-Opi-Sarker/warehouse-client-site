@@ -1,3 +1,7 @@
 .item{
     margin-bottom: 19px;
+    grid-column-gap: 5px;
+}
+.item:hover{
+    background-color: orange;
 }

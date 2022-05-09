@@ -5,8 +5,8 @@ const Item = (props) => {
     const { img, name, description } = props.item;
     return (
         <div className='item'>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top"style={{height:'250px'}} src={img} />
+            <Card style={{ width: '17rem' }}>
+                <Card.Img variant="top"style={{height:'200px'}} src={img} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>
