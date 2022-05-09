@@ -1,0 +1,33 @@
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+h1 {
+    font: italic small-caps bold 28px Georgia, serif;
+}
+
+.container {
+    margin-bottom: 10px;
+}
+
+/* responsive for all  */
+
+@media screen and (max-width:576px) {
+    .items {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 30px;
+    }
+    h1 {
+        font: italic small-caps bold 20px Georgia, serif;
+    }
+
+}
+
+/* fensy responsive */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 40px;
+    }
+}
