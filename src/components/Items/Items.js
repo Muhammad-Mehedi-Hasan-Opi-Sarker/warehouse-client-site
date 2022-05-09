@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Item from '../Item/Item';
 
-import './Items.css';
 const Items = () => {
-    
+    const [items,setItems] = useState([]);
+    useEffect(()=>{
+        fetch('data.json').then(res=>res.json()).then(data=>setItems(data))
+    },[])
     return (
-        <div className='item'>
-            <h1>All Demos Available For Revo</h1>
+        <div>
+            <h1>demo</h1>
+            {
+                items.map(item=><Item
+                key={item.id}
+                item={item}
+                ></Item>)
+            }
         </div>
     );
 };

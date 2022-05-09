@@ -23,6 +23,7 @@ function App() {
        <Route path='/myitems' element={<MyItems></MyItems>}></Route>
        <Route path='/banner' element={<Banner></Banner>}></Route>
        <Route path='/login' element={<Login></Login>}></Route>
+       
      </Routes>
      {/* Below footer */}
      <Footer></Footer>
