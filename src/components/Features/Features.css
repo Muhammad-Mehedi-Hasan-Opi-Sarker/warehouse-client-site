@@ -3,4 +3,13 @@
     color: white;
     background-color:  #ff5c00;
     padding: 30px;
+    
 }
+
+/* mobile responsive */
+
+/* @media screen and (max-width:576px) {
+    .features {
+        width: min-content;
+    }
+} */
