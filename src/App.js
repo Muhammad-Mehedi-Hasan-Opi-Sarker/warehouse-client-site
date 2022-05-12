@@ -8,8 +8,9 @@ import AddItems from './components/AddItems/AddItems';
 import MyItems from './components/MyItems/MyItems';
 import Banner from './components/Banner/Banner';
 import Login from './components/Login/Login';
-import Footer from './components/Footer/Footer';
 import Inventory from './components/Inventory/Inventory';
+import Footer from './components/Footer/Footer';
+import Register from './components/Register/Register';
 function App() {
   
   return (
@@ -25,11 +26,10 @@ function App() {
        <Route path='/myitems' element={<MyItems></MyItems>}></Route>
        <Route path='/banner' element={<Banner></Banner>}></Route>
        <Route path='/login' element={<Login></Login>}></Route>
-       
+       <Route path='/register' element={<Register></Register>}></Route>
      </Routes>
      {/* Below footer */}
      <Footer></Footer>
-
     </div>
   );
 }

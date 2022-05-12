@@ -19,7 +19,7 @@ const Product = (props) => {
                     </Card.Text>
                 </Card.Body>
                 <Card.Body>
-                <Button onClick={()=>handleUpdate(_id)} style={{background:'#ff5c00',border:'none'}}>Primary</Button>
+                <Button onClick={()=>handleUpdate(_id)} style={{background:'#ff5c00',border:'none'}}>Update</Button>
                 </Card.Body>
             </Card>
         </div>

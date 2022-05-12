@@ -1,0 +1,13 @@
+.login {
+    padding:10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 300px
+}
+.login input{
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.login input{
+    font-size: large;
+}

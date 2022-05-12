@@ -2,19 +2,27 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const Inventory = () => {
-    const {inventoryid} =useParams();
-    const [product,setProduct] = useState([]);
-    useEffect(()=>{
+    const { inventoryid } = useParams();
+    const [product, setProduct] = useState([]);
+    useEffect(() => {
         const url = `http://localhost:5000/product/${inventoryid}`;
         fetch(url)
-        .then(res=>res.json())
-        .then(data=>setProduct(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setProduct(data))
+    }, [])
     return (
         <div>
-            <h1>your about id{inventoryid}</h1>
-            <h1>Product name: {product.name}</h1>
-            
+            <div className="card w-50">
+                <div className="card-body">
+                    <img style={{height:'300px',width:'400px'}} src={product.img} alt="" />
+                    <h1>{product.name}</h1>
+                    <h1>Price:${product.price}</h1>
+                    <h3>Quantity: {product.quantity}</h3>
+                    <h3>Supplier Name: {product.supplierName}</h3>
+                    <p>{product.description}</p>
+                </div>
+            </div>
+
         </div>
     );
 };
