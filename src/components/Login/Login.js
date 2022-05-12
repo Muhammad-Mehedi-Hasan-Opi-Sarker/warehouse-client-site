@@ -1,11 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 import './Login.css';
 const Login = () => {
-
+    const navigate = useNavigate();
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+      ] = useSignInWithEmailAndPassword(auth);
+    const handleSubmitLogin=event=>{
+        event.preventDefault();
+        const email =(event.target.email.value);
+        const password =(event.target.password.value);
+        signInWithEmailAndPassword(email,password);
+    }
+    if(user){
+        navigate('/home')
+    }
     return (
         <div className='login mt-4'>
-            <form>
+            <form onSubmit={handleSubmitLogin}>
                 <h1 style={{ color: '#ff5c00' }}>Login</h1>
                 <input type="email" name="email" id="" placeholder='Enter Email' required /><br />
                 <input type="password" name="password" id="" placeholder='Password' required /><br />
