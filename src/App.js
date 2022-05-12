@@ -11,6 +11,7 @@ import Login from './components/Login/Login';
 import Inventory from './components/Inventory/Inventory';
 import Footer from './components/Footer/Footer';
 import Register from './components/Register/Register';
+import Blog from './components/Blog/Blog';
 function App() {
   
   return (
@@ -25,6 +26,7 @@ function App() {
        <Route path='/additems' element={<AddItems></AddItems>}></Route>
        <Route path='/myitems' element={<MyItems></MyItems>}></Route>
        <Route path='/banner' element={<Banner></Banner>}></Route>
+       <Route path='/blog' element={<Blog></Blog>}></Route>
        <Route path='/login' element={<Login></Login>}></Route>
        <Route path='/register' element={<Register></Register>}></Route>
      </Routes>

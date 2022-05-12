@@ -12,20 +12,19 @@ const Headers = () => {
   }
   return (
     <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect expand="lg" fixed="top" style={{color:'red',backgroundColor:'#D3D3D3'}}>
         <Container>
           <Navbar.Brand as={Button} to='/' href="#home"><img style={{ height: '40px' }} src={logo} alt="" />Revo Laptop</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-
-
             </Nav>
             <Nav>
               <Nav.Link as={Button} to='/home' href="#deets">Home</Nav.Link>
               <Nav.Link as={Button} to='/manageitems' href="#deets">Manage Items</Nav.Link>
               <Nav.Link as={Button} to='/additems' href="#deets">Add Items</Nav.Link>
               <Nav.Link as={Button} to='/myitems' href="#deets">My Items</Nav.Link>
+              <Nav.Link as={Button} to='/blog' href="#deets">Blog</Nav.Link>
               {
                 user ? 
                 <button className='btn' style={{color:'white'}} onClick={logOut}>SingOut</button> :
