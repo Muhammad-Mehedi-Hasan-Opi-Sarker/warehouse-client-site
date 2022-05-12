@@ -9,6 +9,7 @@ import MyItems from './components/MyItems/MyItems';
 import Banner from './components/Banner/Banner';
 import Login from './components/Login/Login';
 import Footer from './components/Footer/Footer';
+import Inventory from './components/Inventory/Inventory';
 function App() {
   
   return (
@@ -18,6 +19,7 @@ function App() {
      <Routes>
        <Route path='/' element={<Home></Home>}></Route>
        <Route path='/home' element={<Home></Home>}></Route>
+       <Route path='/inventory/:inventoryid' element={<Inventory></Inventory>}></Route>
        <Route path='/manageitems' element={<ManageItems></ManageItems>}></Route>
        <Route path='/additems' element={<AddItems></AddItems>}></Route>
        <Route path='/myitems' element={<MyItems></MyItems>}></Route>
