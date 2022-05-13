@@ -1,11 +1,13 @@
 import React from 'react';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../Loading/Loading';
 
 const SocialLogin = () => {
     const navigate=useNavigate();
+    let location =useLocation();
+    let from = location.state?.from?.pathname || "/";
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     if(loading){
         return <Loading></Loading>
@@ -17,7 +19,7 @@ const SocialLogin = () => {
           </div>
       }
       if (user) {
-        navigate('/home')
+        navigate(from, { replace: true });
       }
     return (
         <div>
