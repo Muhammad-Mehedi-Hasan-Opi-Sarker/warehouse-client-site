@@ -13,6 +13,7 @@ import Footer from './components/Footer/Footer';
 import Register from './components/Register/Register';
 import Blog from './components/Blog/Blog';
 import RequierAuth from './components/RequierAuth/RequierAuth';
+import E404 from './components/E404/E404';
 function App() {
   
   return (
@@ -42,6 +43,7 @@ function App() {
        <Route path='/blog' element={<Blog></Blog>}></Route>
        <Route path='/login' element={<Login></Login>}></Route>
        <Route path='/register' element={<Register></Register>}></Route>
+       <Route path='*' element={<E404></E404>}></Route>
      </Routes>
      {/* Below footer */}
      <Footer></Footer>
