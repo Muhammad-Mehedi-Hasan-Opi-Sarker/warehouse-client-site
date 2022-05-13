@@ -22,9 +22,15 @@ const Headers = () => {
             <Nav>
               <Nav.Link as={Button} to='/home' href="#deets">Home</Nav.Link>
               <Nav.Link as={Button} to='/manageitems' href="#deets">Manage Items</Nav.Link>
-              <Nav.Link as={Button} to='/additems' href="#deets">Add Items</Nav.Link>
-              <Nav.Link as={Button} to='/myitems' href="#deets">My Items</Nav.Link>
+              {/* <Nav.Link as={Button} to='/additems' href="#deets">Add Items</Nav.Link> */}
+              {/* <Nav.Link as={Button} to='/myitems' href="#deets">My Items</Nav.Link> */}
               <Nav.Link as={Button} to='/blog' href="#deets">Blog</Nav.Link>
+              {
+                user&& <>
+                <Nav.Link as={Link} to="additems">Add Items</Nav.Link>
+                <Nav.Link as={Link} to="myitems">My Items</Nav.Link>
+                </>
+              }
               {
                 user ? 
                 <button className='btn' style={{color:'white'}} onClick={logOut}>SingOut</button> :

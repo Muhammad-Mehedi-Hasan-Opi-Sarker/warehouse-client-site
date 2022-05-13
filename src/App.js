@@ -12,6 +12,7 @@ import Inventory from './components/Inventory/Inventory';
 import Footer from './components/Footer/Footer';
 import Register from './components/Register/Register';
 import Blog from './components/Blog/Blog';
+import RequierAuth from './components/RequierAuth/RequierAuth';
 function App() {
   
   return (
@@ -21,10 +22,22 @@ function App() {
      <Routes>
        <Route path='/' element={<Home></Home>}></Route>
        <Route path='/home' element={<Home></Home>}></Route>
-       <Route path='/inventory/:inventoryid' element={<Inventory></Inventory>}></Route>
+       <Route path='/inventory/:inventoryid' element={
+         <RequierAuth>
+           <Inventory></Inventory>
+         </RequierAuth>
+       }></Route>
        <Route path='/manageitems' element={<ManageItems></ManageItems>}></Route>
-       <Route path='/additems' element={<AddItems></AddItems>}></Route>
-       <Route path='/myitems' element={<MyItems></MyItems>}></Route>
+       <Route path='/additems' element={
+         <RequierAuth>
+           <AddItems></AddItems>
+         </RequierAuth>
+       }></Route>
+       <Route path='/myitems' element={
+         <RequierAuth>
+           <MyItems></MyItems>
+         </RequierAuth>
+       }></Route>
        <Route path='/banner' element={<Banner></Banner>}></Route>
        <Route path='/blog' element={<Blog></Blog>}></Route>
        <Route path='/login' element={<Login></Login>}></Route>
