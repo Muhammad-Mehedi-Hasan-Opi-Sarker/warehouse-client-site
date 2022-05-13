@@ -1,11 +1,10 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
 import Products from '../Products/Products';
-
+import './ManageItems.css'
 
 const ManageItems = () => {
     return (
-        <div>
+        <div className='manageitems'>
            <Products></Products>
         </div>
     );
